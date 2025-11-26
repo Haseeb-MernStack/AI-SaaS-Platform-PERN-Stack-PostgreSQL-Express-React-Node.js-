@@ -10,10 +10,13 @@ import GenerateImages from "./pages/GenerateImages"
 import RemoveBackground from "./pages/RemoveBackground"
 import RemoveObject from "./pages/RemoveObject"
 import ReviewResume from "./pages/ReviewResume"
+import {Toaster} from "react-hot-toast"
 
 const App = () => {
+
   return (
     <div>
+      <Toaster/>
       <Routes>
         {/* Define your routes here */}
         <Route path='/' element={<Home />} />
